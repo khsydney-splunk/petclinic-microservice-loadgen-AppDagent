@@ -1,0 +1,30 @@
+config:
+  target: 'http://api-gateway:8080'
+  phases:
+    - duration: 60
+      arrivalCount: 3
+scenarios:
+  - flow:
+    - loop:
+      - get:
+          url: "/"
+      - think: 1
+      - get:
+          url: "/api/customer/owners"
+          capture:
+            json: "$[*].id"
+            as: "id"
+      - think: 1
+      - get:
+          url: "/api/gateway/owners/{{ id }}"
+          capture:
+            json: "$.pets[*].id"
+            as: "petId"
+      - log: "Captured owner ID: {{ id }}"
+      - think: 1
+      - get:
+          url: "/api/customer/owners/{{ id }}/pets/{{ petId }}"
+      - log: "Captured pet ID: {{ petId }}"
+      - think: 1
+      - get:
+          url: "/api/vet/vets"
