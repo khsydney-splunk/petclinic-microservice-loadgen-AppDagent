@@ -16,7 +16,7 @@ scenarios:
             as: "id"
       - think: 1
       - get:
-          url: "/api/gateway/owners/{{ id }}"
+          url: "/api/customer/owners/{{ id }}"
           capture:
             json: "$.pets[*].id"
             as: "petId"
@@ -28,3 +28,4 @@ scenarios:
       - think: 1
       - get:
           url: "/api/vet/vets"
+      - log: "Accessed vets list"
