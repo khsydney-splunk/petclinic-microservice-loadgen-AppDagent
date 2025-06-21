@@ -4,8 +4,6 @@ services:
       context: ./spring-petclinic-config-server
       args:
         APPDYNAMICS_AGENT_APPLICATION_NAME: ""
-        APPDYNAMICS_AGENT_TIER_NAME: ""
-        APPDYNAMICS_AGENT_NODE_NAME: ""
         APPDYNAMICS_AGENT_ACCOUNT_NAME: ""
         APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY: ""
         APPDYNAMICS_CONTROLLER_HOST_NAME: ""
@@ -29,8 +27,6 @@ services:
       context: ./spring-petclinic-discovery-server
       args:
       APPDYNAMICS_AGENT_APPLICATION_NAME: ""
-      APPDYNAMICS_AGENT_TIER_NAME: ""
-      APPDYNAMICS_AGENT_NODE_NAME: ""
       APPDYNAMICS_AGENT_ACCOUNT_NAME: ""
       APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY: ""
       APPDYNAMICS_CONTROLLER_HOST_NAME: ""
@@ -57,8 +53,6 @@ services:
       context: ./spring-petclinic-customers-service
       args:
       APPDYNAMICS_AGENT_APPLICATION_NAME: ""
-      APPDYNAMICS_AGENT_TIER_NAME: ""
-      APPDYNAMICS_AGENT_NODE_NAME: ""
       APPDYNAMICS_AGENT_ACCOUNT_NAME: ""
       APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY: ""
       APPDYNAMICS_CONTROLLER_HOST_NAME: ""
@@ -82,8 +76,6 @@ services:
       context: ./spring-petclinic-visits-service
       args:
       APPDYNAMICS_AGENT_APPLICATION_NAME: ""
-      APPDYNAMICS_AGENT_TIER_NAME: ""
-      APPDYNAMICS_AGENT_NODE_NAME: ""
       APPDYNAMICS_AGENT_ACCOUNT_NAME: ""
       APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY: ""
       APPDYNAMICS_CONTROLLER_HOST_NAME: ""
@@ -107,8 +99,6 @@ services:
       context: ./spring-petclinic-vets-service
       args:
       APPDYNAMICS_AGENT_APPLICATION_NAME: ""
-      APPDYNAMICS_AGENT_TIER_NAME: ""
-      APPDYNAMICS_AGENT_NODE_NAME: ""
       APPDYNAMICS_AGENT_ACCOUNT_NAME: ""
       APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY: ""
       APPDYNAMICS_CONTROLLER_HOST_NAME: ""
@@ -133,8 +123,6 @@ services:
       context: ./spring-petclinic-genai-service
       args:
       APPDYNAMICS_AGENT_APPLICATION_NAME: ""
-      APPDYNAMICS_AGENT_TIER_NAME: ""
-      APPDYNAMICS_AGENT_NODE_NAME: ""
       APPDYNAMICS_AGENT_ACCOUNT_NAME: ""
       APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY: ""
       APPDYNAMICS_CONTROLLER_HOST_NAME: ""
@@ -163,8 +151,6 @@ services:
       context: ./spring-petclinic-api-gateway
       args:
       APPDYNAMICS_AGENT_APPLICATION_NAME: ""
-      APPDYNAMICS_AGENT_TIER_NAME: ""
-      APPDYNAMICS_AGENT_NODE_NAME: ""
       APPDYNAMICS_AGENT_ACCOUNT_NAME: ""
       APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY: ""
       APPDYNAMICS_CONTROLLER_HOST_NAME: ""
@@ -198,8 +184,6 @@ services:
       context: ./spring-petclinic-admin-server
       args:
       APPDYNAMICS_AGENT_APPLICATION_NAME: ""
-      APPDYNAMICS_AGENT_TIER_NAME: ""
-      APPDYNAMICS_AGENT_NODE_NAME: ""
       APPDYNAMICS_AGENT_ACCOUNT_NAME: ""
       APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY: ""
       APPDYNAMICS_CONTROLLER_HOST_NAME: ""
