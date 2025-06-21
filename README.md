@@ -1,7 +1,8 @@
 # petclinic-microservice-loadgen-AppDagent
 
 
-*** need to have docker installed on the machine you are going to use *** 
+# You need to have docker installed on the machine you are going to use 
+## Load generation with Artillery
 
 Clone the repo and edit .env file with your AppD account details
 1. vi .env
