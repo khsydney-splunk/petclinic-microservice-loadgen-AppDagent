@@ -9,5 +9,5 @@ Clone the repo and edit .env file with your AppD account details
 3. run > docker compose up
 
 This will build the petclinic image with AppD agents with your Account details.
-Check your data after containers are all running.
+  Check your data after containers are all running.
 
