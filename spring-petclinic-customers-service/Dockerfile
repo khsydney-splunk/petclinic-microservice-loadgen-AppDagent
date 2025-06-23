@@ -1,5 +1,6 @@
+ARG TARGET_PLATFORM=linux/amd64
 # Use the existing image as the base
-FROM --platform=linux/arm64 khsydney/spring-petclinic-customers-service:latest
+FROM --platform=${TARGET_PLATFORM} khsydney/spring-petclinic-customers-service:latest
 WORKDIR /application
 COPY ./appagent /opt/appdynamics/
 EXPOSE 8081
