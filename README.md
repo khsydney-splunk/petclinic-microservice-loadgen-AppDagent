@@ -5,7 +5,7 @@
               **Load generation with Artillery**.  
 
 Clone the repo and edit .env file with your AppD account details.  
-1. Edit .env file - make sure to configure right OS platform (arm64 or amd64)
+1. Edit .env file - make sure to configure right linux platform (arm64 or amd64)
 2. Provide AppD account detail and save
 3. Run > docker compose up
 
