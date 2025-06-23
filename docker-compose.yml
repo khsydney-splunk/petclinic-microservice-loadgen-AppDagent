@@ -1,6 +1,6 @@
 services:
   config-server:
-    platform: ${TARGET_PLATPLATFORM}
+    platform: ${TARGET_PLATFORM}
     build:
       context: ./spring-petclinic-config-server
       args:
@@ -212,7 +212,6 @@ services:
 
   ## Grafana / Prometheus
   grafana-server:
-    platform: ${TARGET_PLATFORM}
     build: ./docker/grafana
     container_name: grafana-server
     deploy:
@@ -223,7 +222,6 @@ services:
     - 3030:3030
 
   prometheus-server:
-    platform: ${TARGET_PLATFORM}
     build: ./docker/prometheus
     container_name: prometheus-server
     deploy:
@@ -234,7 +232,6 @@ services:
     - 9091:9090
 
   load-server:
-    platform: ${TARGET_PLATFORM}
     build: ./docker/load-server
     container_name: load-server
     depends_on:
