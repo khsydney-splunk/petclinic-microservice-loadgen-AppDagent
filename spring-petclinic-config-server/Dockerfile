@@ -1,4 +1,4 @@
-ARG TARGET_PLATFORM=linux/amd64
+ARG TARGET_PLATFORM
 # Use the existing image as the base
 FROM --platform=${TARGET_PLATFORM} khsydney/spring-petclinic-config-server:latest
 WORKDIR /application
